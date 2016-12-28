@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content%}
+
+<html lang="en">
+<head>
+<style>
+.container-fluid {
+    padding: 60px 50px;
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.logo-small {
+    color: #1a1aff;
+    font-size: 50px;
+}
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 20px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      max-width: 940px;
+      max-height: 480px;
+      margin: auto;
+  }
+  </style>
+</head>
+
+<br />
+<br />
+<br />
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <a href="/newrepair/"><img src="https://jandjrentalcentersllc.stihldealer.net/webcontent/images/homepage/mediacampaigns/800/DesktopRotator/08981a1a-35a5-4dfc-a4e4-29720afaeabf.jpg?preset=MediaCampaign.DesktopRotator" alt="not working" width="940" height="368"></a>
+          <div class="carousel-caption">
+            <h4>Start a new repair order</h4>
+          </div>
+      </div>
+      <div class="item">
+        <a href="https://jandjrentalcentersllc.stihldealer.net/"><img src="https://jandjrentalcentersllc.stihldealer.net/webcontent/images/homepage/mediacampaigns/800/DesktopRotator/08981a1a-35a5-4dfc-a4e4-29720afaeabf.jpg?preset=MediaCampaign.DesktopRotator" title="MS 170 Chainsaw" alt="Stihl" width="940" height="386"></a>
+          <div class="carousel-caption">
+            <h4>Certified Stihl Dealer</h4>
+          </div>
+      </div>
+      <div class="item">
+          <a href="https://www.uhaul.com/Locations/Truck-Rentals-near-Alamosa-CO-81101/088117/"><img src="{% static "main/images/shopFront.png" %}" alt="U-Haul" width="940" height="368"></a>
+          <div class="carousel-caption">
+            <h4>U-Haul Neighborhood Dealer</h4>
+          </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4><b>We have what you need!</b></h4>
+  <br />
+    <div class="row">
+    <div class="col-sm-3">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Certified dealer for all of your Stihl, Honda and Hotsy equipment needs!</p>
+    </div>
+    <div class="col-sm-3">
+      <a href="/newrepair"><span class="glyphicon glyphicon-wrench logo-small"></span></a>
+    <h4>REPAIRS</h4>
+      <p>Let us help you get your garden project back on track!</p>
+    </div>
+    <div class="col-sm-3">
+      <a href="/contactus"><span class="glyphicon glyphicon-lock logo-small"></span></a>
+      <h4>RENTALS</h4>
+      <p>We can accomodate everything from birthdays to construction projects!</p>
+    </div>
+    <div class="col-sm-3">
+    <span class="glyphicon glyphicon-road logo-small"></span>
+    <h4>UHAUL</h4>
+    <p>Registered U-Haul dealer; let us help you move into your new home!</p>
+  </div>
+</div>
+
+
+</body>
+</html>
+{% endblock %}
