@@ -61,8 +61,9 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-                '/Users/raymond/Desktop/b/jandj/schedule/templates',
-                '/Users/raymond/Desktop/b/jandj/main/templates'
+                '/Users/kayla/Desktop/b/jandj/schedule/templates',
+                '/Users/kayla/Desktop/b/jandj/main/templates',
+                '/Users/kayla/Desktop/b/jandj/accounts/templates',
                 ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -127,6 +128,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 STATIC_URL='/static/'
-STATICFILES_DIRS = ['/Users/raymond/Desktop/b/jandj/main/static/']
+STATICFILES_DIRS = ['/Users/kayla/Desktop/b/jandj/main/static/']
 
-LOGIN_REDIRECT_URL = "contactus/"
+LOGIN_REDIRECT_URL = "/contactus"
